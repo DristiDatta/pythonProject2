@@ -1,0 +1,6 @@
+pip3 install numpy
+pip3 install torch  --index-url https://download.pytorch.org/whl/cu121
+
+import torch
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+print(device)
